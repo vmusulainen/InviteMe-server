@@ -1,6 +1,8 @@
 # "Invite Me" service
 The "Invite Me" service allows to get invites on an mobile phone to coffee, fast-foods etc. with personal discount.
 
+## Looking for: People interested in the project
+
 ### Scenario One: "Coffee lover"
 Imagine that you walk on the street and you have installed the "Invite Me" app on your smartphone. When you are near a cafe, the invite from this cafe is sent to your smartphone. You hear sound of the notification, click on the notification and see that this cafe offers you a cap of coffee with discount 10% (or 15%). You can accept the invite or decline it.
 
