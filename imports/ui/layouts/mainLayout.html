@@ -1,0 +1,12 @@
+<template name="mainLayout">
+    <div class="container-fluid">
+
+        {{#unless currentUser}}
+            {{> unsignedInNavbar}}
+            {{> Template.dynamic template=content}}
+        {{else}}
+            {{> signedInNavbar}}
+            {{> Template.dynamic template=content}}
+        {{/unless}}
+    </div>
+</template>

@@ -1,0 +1,10 @@
+{
+  "private": {
+    "fcmWebApiKey": "<your fcm web api key>",
+    "mailUrl": "<smtp server url>"
+  },
+  "public": {
+    "inviteRange": 100,
+    "reinviteTime": 1
+  }
+}

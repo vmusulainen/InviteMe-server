@@ -1,0 +1,19 @@
+#pointsWrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#pointListWrapper {
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 10px;
+}
+
+#mapWrapper {
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}

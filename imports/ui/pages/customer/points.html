@@ -1,0 +1,36 @@
+<template name="customerPoints">
+
+    <div id="pointsWrapper" class="row" style="height:500px">
+        <div id="pointListWrapper" class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <h4>Point List</h4>
+            {{#each point in points}}
+                <div class="panel panel-default" data-id="{{point._id}}" data-role="point">
+                    <div class="panel-body">
+                        {{point.name}}
+                        <div><small>{{point.address}}</small></div>
+                        <div><small>{{point.from}} - {{point.to}}</small></div>
+                        <div><small>{{point.invite}}</small></div>
+                    </div>
+                    <div class="panel-footer clearfix">
+                        <div class="pull-right">
+                            <button class="btn btn-default btn-xs" data-id="{{point._id}}"
+                                    data-role="point-edit">
+                                Edit
+                            </button>
+                            <button class="btn btn-default btn-xs" data-id="{{point._id}}"
+                                    data-role="point-delete">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+        <div id="mapWrapper" class="col-lg-9 col-md-9 col-sm-8 col-xs-6" style="height:100%">
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+</template>

@@ -1,0 +1,25 @@
+<template name="superuserSettings">
+    <div class="page-header">
+        <h3>Settings</h3>
+    </div>
+    {{#if Template.subscriptionsReady}}
+        <form>
+            <div class="form-group">
+                <label for="fcmWebApiKey">FCM Web API key</label>
+                <input type="text" class="form-control" id="fcmWebApiKey" placeholder="Enter Firebase Wew API key here"
+                       value="{{fcmWebApiKey}}">
+            </div>
+            <div class="form-group">
+                <label for="reinviteTime">Time before re-invitation, min</label>
+                <input type="number" class="form-control" id="reinviteTime"
+                       placeholder="Time in minutes before re-invitation" value="{{reinviteTime}}">
+            </div>
+            <div class="form-group">
+                <label for="inviteRange">Invite Range, m</label>
+                <input type="number" class="form-control" id="inviteRange" placeholder="Range in meters for inviting"
+                       value="{{inviteRange}}">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    {{/if}}
+</template>
